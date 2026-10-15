@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Palindrome Check</h2>
+
+    <input type="text" id="num" placeholder="Enter a number">
+    <button onclick="check()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function check() {
+            let n = document.getElementById("num").value;
+            let rev = n.split("").reverse().join("");
+
+            if (n == rev)
+                document.getElementById("result").innerHTML = "Palindrome";
+            else
+                document.getElementById("result").innerHTML = "Not Palindrome";
+        }
+    </script>
+</body>
+</html>
